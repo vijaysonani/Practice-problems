@@ -28,10 +28,10 @@
 public class Excel{
   public static void main (String args[]){
     System.out.println("Excel");
-    System.out.println(new Excel().convert(54));
+    System.out.println(new Excel().convertToTitle(54));
   }
 
-  public String convert(int A){
+  public String convertToTitle(int A){
     StringBuilder sb = new StringBuilder();
  
     while(A > 0){
