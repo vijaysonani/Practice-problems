@@ -33,13 +33,13 @@ import java.util.ArrayList;
  * you need to return a 2D array.
  */
 
-public class ConcentricMatrix{
-  public static void main (String args[]){
+public class ConcentricMatrix {
+  public static void main(String args[]) {
     System.out.println("ConcentricMatrix");
     System.out.println(new ConcentricMatrix().PrintConcentricMatrix(3));
   }
 
-  public ArrayList<ArrayList<Integer>> PrintConcentricMatrix(int A){
+  public ArrayList<ArrayList<Integer>> PrintConcentricMatrix(int A) {
     // int[][] result = new int[2*A-1][2*A-1];
     // int currentPos = 0;
     // int currentNum = A;
@@ -67,31 +67,31 @@ public class ConcentricMatrix{
     //   System.out.println();      
     // }
 
-    ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>(2*A-1);
+    ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>(2 * A - 1);
     int currentPos = 0;
     int currentNum = A;
-    int size = 2*A-2;
+    int size = 2 * A - 2;
 
     ArrayList<Integer> temp;
 
     // Initialize array list
-    for(int i=0; i <= size; i++){
-      temp = new ArrayList<Integer>(2*A-1);
-      for(int j=0; j <= size; j++){
+    for (int i = 0; i <= size; i++) {
+      temp = new ArrayList<Integer>(2 * A - 1);
+      for (int j = 0; j <= size; j++) {
         temp.add(j, 0);
       }
       result.add(i, temp);
     }
 
     // Set matrix values
-    while(currentPos < A){
-      for(int i=currentPos; i <= size; i++){
+    while (currentPos < A) {
+      for (int i = currentPos; i <= size; i++) {
         result.get(currentPos).set(i, currentNum);
         result.get(i).set(size, currentNum);
         result.get(size).set(i, currentNum);
         result.get(i).set(currentPos, currentNum);
       }
-      size--;      
+      size--;
       currentPos++;
       currentNum--;
     }

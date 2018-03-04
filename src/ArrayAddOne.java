@@ -27,10 +27,10 @@ import java.util.ArrayList;
  *
  */
 public class ArrayAddOne {
-  public static void main(String args[]){
+  public static void main(String args[]) {
     ArrayAddOne obj = new ArrayAddOne();
     ArrayList<Integer> A = new ArrayList<Integer>();
-    
+
     // Sample test cases
 
     // A.add(0, 0);
@@ -49,34 +49,35 @@ public class ArrayAddOne {
     // A.add(2, 0);
     // A.add(3, 3);
 
-    System.out.println("Arraylist contains: " + obj.plusOne(A).toString());  
+    System.out.println("Arraylist contains: " + obj.plusOne(A).toString());
   }
+
   public ArrayList<Integer> plusOne(ArrayList<Integer> A) {
-    ArrayList<Integer> result = A;  // For better naming
+    ArrayList<Integer> result = A; // For better naming
 
     // Add one to the array
-    for(int i=result.size()-1; i>=0; i--) {
+    for (int i = result.size() - 1; i >= 0; i--) {
       if (result.get(i).equals(9)) {
         if (i > 0) {
           result.set(i, 0);
         } else {
-            // Else insert element 1 at begining of array
-            if (result.get(i).equals(9)) {
-              result.set(i, 0);          
-              result.add(0, 1);
-            } else {     
-              result.set(i, result.get(i) + 1);
-            }
+          // Else insert element 1 at begining of array
+          if (result.get(i).equals(9)) {
+            result.set(i, 0);
+            result.add(0, 1);
+          } else {
+            result.set(i, result.get(i) + 1);
+          }
           break;
         }
-      } else {        
+      } else {
         result.set(i, result.get(i) + 1);
-        break;        
+        break;
       }
     }
 
     // Remove leading zeros
-    for (int i=0; i < result.size(); i++) {
+    for (int i = 0; i < result.size(); i++) {
       if (result.get(i).equals(0)) {
         result.remove(i);
         i--;

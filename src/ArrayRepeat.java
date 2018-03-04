@@ -20,9 +20,9 @@ import java.util.HashSet;
 *
 */
 
- public class ArrayRepeat {
+public class ArrayRepeat {
 	public static void main(String args[]) {
-		int[] arr = {3, 4, 1, 4, 1};
+		int[] arr = { 3, 4, 1, 4, 1 };
 		ArrayRepeat obj = new ArrayRepeat();
 		obj.findDuplicate(arr);
 	}

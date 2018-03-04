@@ -16,13 +16,13 @@ import java.util.HashSet;
  *
  */
 public class ArrayDuplicates {
-    public static void main(String args[]) {
-		int[] arr = {4, 1, 1, 2, 1, 3};
+	public static void main(String args[]) {
+		int[] arr = { 4, 1, 1, 2, 1, 3 };
 		ArrayRepeat obj = new ArrayRepeat();
 		obj.findDuplicate(arr);
-    }
-    
-    public void findDuplicate(int[] arr) {
+	}
+
+	public void findDuplicate(int[] arr) {
 		HashSet<Integer> set = new HashSet<Integer>();
 		for (int var : arr) {
 			if (set.contains(var)) {

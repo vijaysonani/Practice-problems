@@ -25,22 +25,22 @@
  * 	705 	AAC
  */
 
-public class Excel{
-  public static void main (String args[]){
+public class Excel {
+  public static void main(String args[]) {
     System.out.println("Excel");
     System.out.println(new Excel().convertToTitle(54));
   }
 
-  public String convertToTitle(int A){
+  public String convertToTitle(int A) {
     StringBuilder sb = new StringBuilder();
- 
-    while(A > 0){
-        A--;
-        char ch = (char) (A % 26 + 'A');
-        A/= 26;
-        sb.append(ch);
+
+    while (A > 0) {
+      A--;
+      char ch = (char) (A % 26 + 'A');
+      A /= 26;
+      sb.append(ch);
     }
- 
+
     sb.reverse();
     return sb.toString();
   }
