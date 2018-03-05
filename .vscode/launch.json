@@ -6,6 +6,16 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Debug (ArrayRemoveElement)",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "ArrayRemoveElement",
+      "args": ""
+    },
+    {
+      "type": "java",
       "name": "Debug (SortedInsertPosition)",
       "request": "launch",
       "cwd": "${workspaceFolder}",
