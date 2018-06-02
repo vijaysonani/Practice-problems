@@ -1,20 +1,22 @@
+package com.interviewbit.arrays;
+
 import java.util.ArrayList;
 
 /**
  * Given a non-negative number represented as an array of digits,
  * add 1 to the number ( increment the number represented by the digits ).
- * 
+ *
  * The digits are stored such that the most significant digit is at the head of
  * the list.
- * 
+ *
  * Example:
- * 
+ *
  * If the vector has [1, 2, 3]
- * 
+ *
  * the returned vector should be [1, 2, 4]
- * 
+ *
  * as 123 + 1 = 124.
- * 
+ *
  * NOTE: Certain things are intentionally left unclear in this question which
  * you should practice asking the interviewer. For example, for this problem,
  * following are some good questions to ask : Q : Can the input have 0’s before
@@ -23,7 +25,7 @@ import java.util.ArrayList;
  * most significant digit? Or in other words, is 0 1 2 4 a valid output? A : For
  * the purpose of this question, NO. Even if the input has zeroes before the
  * most significant digit.
- * 
+ *
  *
  */
 public class ArrayAddOne {
@@ -44,10 +46,10 @@ public class ArrayAddOne {
     // A.add(2, 3);
     // A.add(3, 7);
 
-    // A.add(0, 1);    
-    // A.add(1, 0);
-    // A.add(2, 0);
-    // A.add(3, 3);
+    A.add(0, 1);
+    A.add(1, 0);
+    A.add(2, 0);
+    A.add(3, 3);
 
     System.out.println("Arraylist contains: " + obj.plusOne(A).toString());
   }

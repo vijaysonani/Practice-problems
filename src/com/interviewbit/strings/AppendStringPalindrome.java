@@ -1,17 +1,19 @@
+package com.interviewbit.strings;
+
 /**
- * 
+ *
  * You are given a string. The only operation allowed is to insert characters in
  * the beginning of the string. How many minimum characters are needed to be
  * inserted to make the string a palindrome string
- * 
+ *
  * Example: 
- * 
+ *
  * Input: ABC 
  * Output: 2
- * 
+ *
  * Input: AACECAAAA 
  * Output: 2
- * 
+ *
  * Ask interviewer: case sensitivity
  *
  */

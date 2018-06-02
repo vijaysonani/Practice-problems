@@ -1,20 +1,22 @@
+package com.interviewbit.strings;
+
 /**
- * 
+ *
  * Given a roman numeral, convert it to an integer.
- * 
+ *
  * Input is guaranteed to be within the range from 1 to 3999.
- * 
+ *
  * Read more details about roman numerals at Roman Numeric System(wiki)
- * 
+ *
  * Example :
- * 
+ *
  * Input : "XIV" Return : 14 Input : "XX" Output : 20
- * 
- * 
+ *
+ *
  * Symbol 	I 	V 	X 	L 	C 	  D 		M 
  * Value 	  1 	5 	10 	50 	100   500 	1,000
  *
- * 
+ *
  */
 
 public class RomanToInteger {
@@ -34,7 +36,7 @@ public class RomanToInteger {
       cur = getIntegerFromRoman("" + A.charAt(i));
       if (prev != 0 && prev < cur){
         result -= 2*prev;
-        result += cur;         
+        result += cur;
       } else {
         result += cur;
       }
@@ -46,22 +48,22 @@ public class RomanToInteger {
 
   public int getIntegerFromRoman(String s) {
     switch (s) {
-    case "M":
-      return 1000;
-    case "D":
-      return 500;
-    case "C":
-      return 100;
-    case "L":
-      return 50;
-    case "X":
-      return 10;
-    case "V":
-      return 5;
-    case "I":
-      return 1;
-    default:
-      return 0;
+      case "M":
+        return 1000;
+      case "D":
+        return 500;
+      case "C":
+        return 100;
+      case "L":
+        return 50;
+      case "X":
+        return 10;
+      case "V":
+        return 5;
+      case "I":
+        return 1;
+      default:
+        return 0;
     }
   }
 }
