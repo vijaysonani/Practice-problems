@@ -69,36 +69,25 @@ public class ArrayRemoveElement {
 
   public int removeElement(ArrayList<Integer> a, int b) {
     int target = b;
-    int firstPointer = 0;
-    int secondPointer = 0;
+    int redPointer = 0;
+    int bluePointer = 0;
 
-    while (secondPointer < a.size()) {
-      if (a.get(firstPointer) == target) {
-        for (int i = firstPointer + 1; i < a.size(); i++) {
-          if (a.get(i) != target) {
-            a.set(firstPointer, a.get(i));
-            a.set(i, target);
-            secondPointer = i + 1;
-            firstPointer++;
-            break;
-          }
-        }
-      } else {
-        firstPointer++;
-        secondPointer++;
-      }
+    while (redPointer < a.size() && bluePointer < a.size() ) {
+       if (a.get(bluePointer) == target) {
+         if (a.get(redPointer) == target) {
+           redPointer++;
+         } else {
+           a.set(bluePointer, a.get(redPointer));
+           a.set(redPointer, target);
+           bluePointer++;
+           redPointer++;
+         }
+       } else {
+         bluePointer++;
+         redPointer++;
+       }
     }
-    // System.out.println(firstPointer);
-    // System.out.println(a.get(firstPointer));
 
-    // for (int i = firstPointer; i < a.size(); i++){
-    //   a.set(i, null);
-    // }
-
-    // if (a.get(0) == target){
-    //   a = new ArrayList<Integer>();
-    //   System.out.println(a);    
-    // }
-    return firstPointer;
+    return bluePointer;
   }
 }

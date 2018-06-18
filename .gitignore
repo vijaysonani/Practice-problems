@@ -1,10 +1,8 @@
-# Maven project files
 .class
 .classpath
 .project
 .settings
 
-# IntelliJ project files
 .idea
 *.iml
 *.ipr
