@@ -1,5 +1,14 @@
 package com.interviewbit.linkedlists;
 
+/**
+ * Reverse a linked list. Do it in-place and in one-pass.
+ *
+ * For example:
+ * Given 1->2->3->4->5->NULL,
+ *
+ * return 5->4->3->2->1->NULL.
+ */
+
 public class ReverseLinkedList extends ListNode {
     public static void main(String args[]) {
         ListNode node11 = new ListNode(11);
