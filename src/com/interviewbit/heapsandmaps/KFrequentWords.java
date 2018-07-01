@@ -59,7 +59,7 @@ class KFrequentWords {
         for (String s: words) {
             int cnt = 1;
 
-            // update count of occurence
+            // update count of occurrence
             if (wordMap.containsKey(s)) {
                 cnt = wordMap.get(s) + 1;
             }
