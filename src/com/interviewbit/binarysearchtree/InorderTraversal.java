@@ -1,9 +1,10 @@
 package com.interviewbit.binarysearchtree;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Stack;
 
 /**
- * Given a binary tree, return the preorder traversal of its nodes’ values.
+ * Given a binary tree, return the inorder traversal of its nodes’ values.
  *
  * Example :
  * Given binary tree
@@ -13,12 +14,12 @@ import java.util.*;
  *      2
  *     /
  *    3
- * return [1,2,3].
+ * return [1,3,2].
  *
  * Using recursion is not allowed.
  */
 
-public class PreorderTraversal {
+public class InorderTraversal {
     public static void main(String args[]) {
         TreeNode node1 = new TreeNode(100);
         TreeNode node2 = new TreeNode(98);
@@ -37,56 +38,51 @@ public class PreorderTraversal {
         node3.left = node7;
         node3.right = node8;
 
-//        ArrayList<Integer> result = new PreorderTraversal().preorderRecursive(node1);
-        ArrayList<Integer> result = new PreorderTraversal().preorderTraversal(node1);
+//        ArrayList<Integer> result = new InorderTraversal().inorderRecursive(node1);
+        ArrayList<Integer> result = new InorderTraversal().inorderTraversal(node1);
         System.out.println(result.toString());
     }
 
 
-    public ArrayList<Integer> preorderTraversal(TreeNode A) {
-        /**
-         * 1) Create an empty stack nodeStack and push root node to stack.
-         * 2) Do following while nodeStack is not empty.
-         *      ….a) Pop an item from stack and print it.
-         *      ….b) Push right child of popped item to stack
-         *      ….c) Push left child of popped item to stack
-         */
-
+    public ArrayList<Integer> inorderTraversal(TreeNode A) {
         if (A == null) { return null; }
 
         ArrayList<Integer> result = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
         stack.push(A);
+        TreeNode currentNode = A.left;
 
         while (!stack.isEmpty()) {
-            A = stack.pop();
-            result.add(A.val);
-
-            if (A.right != null) {
-                stack.push(A.right);
-            }
-
-            if (A.left != null) {
-                stack.push(A.left);
+            if (currentNode != null) {
+                stack.push(currentNode);
+                currentNode = currentNode.left;
+            } else {
+                A = stack.pop();
+                result.add(A.val);
+                if (A.right != null) {
+                    A = A.right;
+                    stack.push(A);
+                    currentNode = A.left;
+                }
             }
         }
 
         return result;
     }
 
-    public ArrayList<Integer> preorderRecursive(TreeNode a) {
+    public ArrayList<Integer> inorderRecursive(TreeNode a) {
         ArrayList<Integer> result = new ArrayList<>();
 
-        preorderRecursiveTraversal(a, result);
+        inorderRecursiveTraversal(a, result);
         return result;
     }
 
     // Recursive approach
-    private void preorderRecursiveTraversal(TreeNode a, ArrayList<Integer> result) {
+    private void inorderRecursiveTraversal(TreeNode a, ArrayList<Integer> result) {
         if (a == null) { return; }
 
+        inorderRecursiveTraversal(a.left, result);
         result.add(a.val);
-        preorderRecursiveTraversal(a.left, result);
-        preorderRecursiveTraversal(a.right, result);
+        inorderRecursiveTraversal(a.right, result);
     }
 }

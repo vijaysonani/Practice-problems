@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3facc91-57e4-43c8-822c-25ffad98f0df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/PreorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/InorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/PreorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/PreorderTraversal.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,15 +17,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PreorderTraversal.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/PreorderTraversal.java">
+      <file leaf-file-name="InorderTraversal.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/InorderTraversal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="345">
+              <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#preorderRecursive#0;class#PreorderTraversal#0" />
-                <element signature="method#preorderRecursiveTraversal#0;class#PreorderTraversal#0" />
               </folding>
             </state>
           </provider>
@@ -116,6 +114,7 @@
         <option value="$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/VerticalTraversal.java" />
         <option value="$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/LevelOrderTraversal.java" />
         <option value="$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/PreorderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/InorderTraversal.java" />
       </list>
     </option>
   </component>
@@ -215,6 +214,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.interviewbit.binarysearchtree" />
       <recent name="com.interviewbit.stacksandqueues" />
       <recent name="com.interviewbit.linkedlists" />
       <recent name="com.interviewbit.twopointers" />
@@ -235,7 +235,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PreorderTraversal">
+  <component name="RunManager" selected="Application.InorderTraversal">
+    <configuration name="InorderTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interviewbit.binarysearchtree.InorderTraversal" />
+      <module name="InterviewBit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interviewbit.binarysearchtree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="LevelOrderTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.interviewbit.binarysearchtree.LevelOrderTraversal" />
       <module name="InterviewBit" />
@@ -254,17 +265,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.interviewbit.binarysearchtree.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviewbit.lotum.Solution" />
-      <module name="InterviewBit" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.interviewbit.lotum.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -334,18 +334,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.ValidBinarySearchTree" />
-      <item itemvalue="Application.Solution (1)" />
       <item itemvalue="Application.LevelOrderTraversal" />
       <item itemvalue="Application.VerticalTraversal" />
       <item itemvalue="Application.PreorderTraversal" />
+      <item itemvalue="Application.InorderTraversal" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InorderTraversal" />
         <item itemvalue="Application.PreorderTraversal" />
         <item itemvalue="Application.LevelOrderTraversal" />
         <item itemvalue="Application.VerticalTraversal" />
         <item itemvalue="Application.ValidBinarySearchTree" />
-        <item itemvalue="Application.Solution (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +377,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32912722" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3270242" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32666665" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -388,7 +388,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32946146" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49931225" visible="true" weight="0.20178571" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49931225" weight="0.20178571" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -545,8 +545,14 @@
           <properties />
           <option name="timeStamp" value="146" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/InorderTraversal.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="160" />
+      <option name="time" value="162" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -599,13 +605,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/strings/IntegerToRoman.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/interviewbit/checkpoints/ConcentricMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -970,12 +969,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/PreorderTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="293">
+          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="method#preorderRecursive#0;class#PreorderTraversal#0" />
             <element signature="method#preorderRecursiveTraversal#0;class#PreorderTraversal#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/binarysearchtree/InorderTraversal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
