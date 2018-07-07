@@ -9,15 +9,15 @@ package com.interviewbit.linkedlists;
  * }
  */
 
-class ListNode {
+public class ListNode {
     public int val;
     public ListNode next;
 
-    ListNode() { val = 0; next = null; }
+    public ListNode() { val = 0; next = null; }
 
-    ListNode(int x) { val = x; next = null; }
+    public ListNode(int x) { val = x; next = null; }
 
-    protected int getListLength(ListNode a) {
+    public static int getListLength(ListNode a) {
         int length = 0;
         ListNode currentNode = a;
         System.out.println(currentNode == null);
@@ -30,7 +30,7 @@ class ListNode {
         return length;
     }
 
-    protected static void printList(ListNode A) {
+    public static void printList(ListNode A) {
         while (A != null) {
             System.out.println(A.val);
             A = A.next;
