@@ -38,16 +38,22 @@ public class Atoi {
         char c;
         double result = 0;
         boolean reverse = false;
+        boolean isConverting = false;
 
         for (int i =0; i < A.length(); i++) {
             c = A.charAt(i);
 
-            if (c == '-') {
+            if (c == '-' && !isConverting) {
                 reverse = true;
+                isConverting = true;
+                continue;
+            } else if (c == '+' && !isConverting) {
+                reverse = false;
+                isConverting = true;
                 continue;
             }
 
-            if (c == ' ' && result == 0) {
+            if (c == ' ' && !isConverting && !reverse) {
                 continue;
             }
 
@@ -56,6 +62,7 @@ public class Atoi {
             }
 
             result = (result*10) + (c - '0');
+            isConverting = true;
         }
 
         if (reverse) {
