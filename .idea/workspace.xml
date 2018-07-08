@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3facc91-57e4-43c8-822c-25ffad98f0df" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/strings/Palindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/interviewbit/hashing/ColorfulNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/interviewbit/strings/Atoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interviewbit/strings/Atoi.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,56 +17,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Atoi.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/strings/Atoi.java">
+      <file leaf-file-name="ColorfulNumber.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/hashing/ColorfulNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="33" selection-start-line="33" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Palindrome.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/strings/Palindrome.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Strstr.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/strings/Strstr.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcentricMatrix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/checkpoints/ConcentricMatrix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Intersection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/linkedlists/Intersection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppendStringPalindrome.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/interviewbit/strings/AppendStringPalindrome.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="5" />
+            <state relative-caret-position="604">
+              <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#868#877#0" expanded="true" />
+                <element signature="e#922#931#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,7 +42,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nextNode</find>
       <find>nextNode = currentNode.next;</find>
       <find>postConnectingNode</find>
       <find>prevNode</find>
@@ -113,6 +71,7 @@
       <find>ctrNeed</find>
       <find>baba</find>
       <find>0-9</find>
+      <find>%</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -164,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/com/interviewbit/strings/Strstr.java" />
         <option value="$PROJECT_DIR$/src/com/interviewbit/strings/Atoi.java" />
         <option value="$PROJECT_DIR$/src/com/interviewbit/strings/Palindrome.java" />
+        <option value="$PROJECT_DIR$/src/com/interviewbit/hashing/ColorfulNumber.java" />
       </list>
     </option>
   </component>
@@ -225,6 +185,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="interviewbit" type="462c0819:PsiDirectoryNode" />
               <item name="checkpoints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InterviewBit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InterviewBit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="interviewbit" type="462c0819:PsiDirectoryNode" />
+              <item name="hashing" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InterviewBit" type="b2602c69:ProjectViewProjectNode" />
@@ -319,7 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Palindrome">
+  <component name="RunManager" selected="Application.ColorfulNumber">
     <configuration name="Atoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.interviewbit.strings.Atoi" />
       <module name="InterviewBit" />
@@ -331,6 +298,17 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="ColorfulNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.interviewbit.hashing.ColorfulNumber" />
+      <module name="InterviewBit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.interviewbit.hashing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.interviewbit.strings.Palindrome" />
       <module name="InterviewBit" />
@@ -338,17 +316,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.interviewbit.strings.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="PostorderTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.interviewbit.binarysearchtree.PostorderTraversal" />
-      <module name="InterviewBit" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.interviewbit.binarysearchtree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -417,19 +384,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Application.PostorderTraversal" />
       <item itemvalue="Application.SubtractLinkedList" />
       <item itemvalue="Application.Atoi" />
       <item itemvalue="Application.Strstr" />
       <item itemvalue="Application.Palindrome" />
+      <item itemvalue="Application.ColorfulNumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ColorfulNumber" />
         <item itemvalue="Application.Palindrome" />
         <item itemvalue="Application.Strstr" />
         <item itemvalue="Application.Atoi" />
         <item itemvalue="Application.SubtractLinkedList" />
-        <item itemvalue="Application.PostorderTraversal" />
       </list>
     </recent_temporary>
   </component>
@@ -457,7 +424,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32912722" />
@@ -467,7 +433,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3438486" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3438486" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.32946146" />
       <window_info id="Capture Tool" order="6" />
@@ -478,7 +444,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.47333333" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4731861" />
       <window_info id="Favorites" order="5" sideWeight="0.5006878" side_tool="true" weight="0.22083333" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
@@ -635,8 +601,20 @@
           <properties />
           <option name="timeStamp" value="200" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/hashing/ColorfulNumber.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/interviewbit/hashing/ColorfulNumber.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="201" />
+      <option name="time" value="205" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -694,7 +672,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bin/com.interviewbit/arrays/ArrayDuplicates.class" />
     <entry file="file://$PROJECT_DIR$/src/com/interviewbit/arrays/ArrayDuplicates.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -1027,13 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/strings/Strstr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/interviewbit/checkpoints/ConcentricMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1048,17 +1018,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/strings/Atoi.java">
+    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/strings/Strstr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="33" selection-start-line="33" selection-end-line="34" />
+        <state relative-caret-position="560">
+          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/interviewbit/strings/Palindrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="225">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/strings/Atoi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/interviewbit/hashing/ColorfulNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#868#877#0" expanded="true" />
+            <element signature="e#922#931#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
