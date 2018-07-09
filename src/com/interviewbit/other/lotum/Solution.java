@@ -1,4 +1,4 @@
-package com.interviewbit.lotum;
+package com.interviewbit.other.lotum;
 
 import java.util.Arrays;
 import java.util.HashSet;
